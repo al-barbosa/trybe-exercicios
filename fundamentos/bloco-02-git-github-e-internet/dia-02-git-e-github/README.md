@@ -4,6 +4,14 @@ git rm
 ##Recuperando arquivo deletado
 git checkout XXXX~1 nomeDoArquivo
 
+##Atalho para criar/trocar branch
+
+git checkout -b NOME
+
+##Outros
+git log
+git fetch
+
 ##gitignore
 
 
