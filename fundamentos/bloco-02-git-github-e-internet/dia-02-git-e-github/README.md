@@ -1,6 +1,9 @@
 ##Para remover do git
 git rm
 
+##Adicionar e comitar
+git commit -a
+
 ##Recuperando arquivo deletado
 git checkout XXXX~1 nomeDoArquivo
 
