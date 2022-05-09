@@ -1,0 +1,32 @@
+ol li{
+    background-color: yellow;
+}
+
+ol li:nth-of-type(odd){
+    color: green;
+}
+
+ol li:nth-of-type(even){
+    text-transform: uppercase;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
+#linguagens li:not(:nth-child(n + 2)){
+    color: blue;
+}
+
+h1, h3{
+    color: red;
+}
+
+h1 em, h3 em{
+    border: 1px solid black;
+    font-size: 40px;
+}
