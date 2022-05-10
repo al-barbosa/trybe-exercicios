@@ -8,6 +8,14 @@ nav{
   right: 10%;
 }
 
-li{
+.nav-links{
   display: inline;
+}
+
+li{
+  list-style: none;
+}
+
+footer{
+  padding-top: 15px;
 }
