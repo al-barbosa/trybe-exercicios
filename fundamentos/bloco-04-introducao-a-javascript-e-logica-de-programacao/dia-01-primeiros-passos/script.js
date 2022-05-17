@@ -140,37 +140,35 @@ function salLiquido(x){
 }
 
 function inss(x){
-  let sal = x;
-  if (sal <= 1556.94){
-    sal = sal - sal*0.08;
-    return sal
-  } else  if (sal <= 2594.92){
-    sal = sal - sal*0.09;
-    return sal
-  } else  if (sal <= 5189.82){
-    sal = sal - sal*0.11;
-    return sal
+  if (x <= 1556.94){
+    x -= x*0.08;
+    return x
+  } else  if (x <= 2594.92){
+    x -= x*0.09;
+    return x
+  } else  if (x <= 5189.82){
+    x -= x*0.11;
+    return x
   } else{
-    sal = sal - 570.88;
-    return sal
+    x -= 570.88;
+    return x
   }
 }
 
 function ir(x){
-  let sal = x;
-  if (sal <= 1903.98){
-    return sal    
-  } else  if (sal <= 2826.65){
-    sal = sal - (sal*0.075-142.80);
-    return sal
-  } else  if (sal <= 3751.05){
-    sal = sal - (sal*0.15-354.80);
-    return sal
-  } else  if (sal <= 4664.68){
-    sal = sal - (sal*0.225-636.13);
-    return sal
+  if (x <= 1903.98){
+    return x    
+  } else  if (x <= 2826.65){
+    x -= (x*0.075-142.80);
+    return x
+  } else  if (x <= 3751.05){
+    x -= (x*0.15-354.80);
+    return x
+  } else  if (x <= 4664.68){
+    x -= (x*0.225-636.13);
+    return x
   } else{
-    sal = sal - (sal*0.275-869.36);
-    return sal
+    x -= (x*0.275-869.36);
+    return x
   }
 }
