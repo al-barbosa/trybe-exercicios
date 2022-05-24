@@ -1,6 +1,6 @@
 let word = document.getElementsByTagName('p');
 let main = document.getElementsByTagName('main');
-let h1 = document.getElementsByClassName('title')
+let h1 = document.getElementById('title')
 let center = document.getElementsByClassName('center-content')
 
 word[0].innerText = 'Me vejo trabalhando e feliz, em um Brasil melhor.';

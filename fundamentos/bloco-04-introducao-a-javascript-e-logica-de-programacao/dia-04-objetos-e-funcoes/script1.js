@@ -7,7 +7,7 @@ let info = {
 
 //1
 
-//console.log(`Bom dia, ${info['personagem']}`)
+console.log(`Bom dia, ${info['personagem']}`)
 
 
 //2
@@ -18,16 +18,16 @@ info.recorrente = 'sim'
 
 //3
 
-// for (let n in info){
-//   console.log(n)
-// }
+ for (let n in info){
+  console.log(n)
+ }
 
 
 //4
 
-// for (let n in info){
-//   console.log(info[n])
-// }
+for (let n in info){
+  console.log(info[n])
+}
 
 
 //
@@ -39,13 +39,13 @@ let info2 = {
   recorrente: 'sim'
 };
 
-// for (let prop in info){
-//   if (prop === 'recorrente' && info2[prop] === "sim" && info[prop] === "sim"){
-//     console.log('Ambos são personagens recorrentes')
-//   } else {
-//     console.log(`${info[prop]} e ${info2[prop]}`)
-//   }
-// }
+for (let prop in info){
+  if (prop === 'recorrente' && info2[prop] === "sim" && info[prop] === "sim"){
+    console.log('Ambos são personagens recorrentes')
+  } else {
+    console.log(`${info[prop]} e ${info2[prop]}`)
+  }
+}
 
 
 let leitor = {
@@ -61,7 +61,7 @@ let leitor = {
   ],
 };
 
-// console.log(`O livro favorito de ${leitor.nome} ${leitor.sobrenome}: ${leitor.livrosFavoritos[0].titulo}`)
+console.log(`O livro favorito de ${leitor.nome} ${leitor.sobrenome}: ${leitor.livrosFavoritos[0].titulo}`)
 
 leitor.livrosFavoritos[1] = {
   titulo: 'Harry Potter e o Prisioneiro de Azkaban',
