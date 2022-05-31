@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <form action="">
+      <p>
+        <label for="nome"> Insira seu nome: <input type="text" name="nome" placeholder="Nome" id="nome" minlength="10" maxlength="40" required size="30"></label>
+      </p>
+      <p>
+        <label for="email">Insira seu e-mail: <input type="email" name="email" id="email" placeholder="E-mail" required minlength="10" maxlength="50" size="30"></label>
+      </p>
+      <p>
+        <label for="destino1"><input type="checkbox" name="destino" id="destino1" value="cidade" class="destino">Cidade</label>
+        <label for="destino2"><input type="checkbox" name="destino" id="destino2" value="campo" class="destino">Campo</label>
+        <label for="destino3"><input type="checkbox" name="destino" id="destino3" value="montanha" class="destino">Montanha</label>
+        <label for="destino4"><input type="checkbox" name="destino" id="destino4" value="praia" class="destino">Praia</label>
+      </p>
+      <p><label for="resposta">
+        Por que você deveria ser a pessoa desenvolvedora<br>a ganhar o concurso TrybeTrip?<br>
+        <textarea name="resposta" id="resposta" cols="40" rows="10" maxlength="500"></textarea></label>
+      </p>
+      <div>
+        <label for="estacao">Qual sua estação favorita?
+        <select name="estacao" id="estacao">
+          <optgroup label="Boas">
+          <option value="primavera">Primavera</option>
+          <option value="outono">Outono</option></optgroup>
+          <optgroup label="Ruins">
+            <option value="inverno">Inverno</option>
+            <option value="verao">Verão</option></optgroup>
+        </label>
+        </select>
+      </div>
+      <p>
+        <label for="data">Qual seria a melhor data para realizar a viagem?<br><input type="date" id="data"></label>
+      </p>
+      <div>
+        <label for="subscribe"><input type="checkbox" id="subscribe">Receber notícias sobre oportunidades oferecidas pela Trybe</label> <br>
+        <label for="accept"><input type="checkbox" id="accept">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros</label>
+      </div>
+      <br>
+      <button id="send" type="submit">Enviar</button>
+      <button id="clearBtn" type="reset">Reiniciar</button>
+    </form>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
