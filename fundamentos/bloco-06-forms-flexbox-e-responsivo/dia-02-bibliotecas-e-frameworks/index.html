@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="dist/js/DatePickerX.js"></script>
+  <link rel="stylesheet" href="dist/css/DatePickerX.css">
+</head>
+<body>
+  <header>
+    <form action="">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Insira aqui seu nome" aria-label="Insira aqui seu nome" name="name">
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Nome de usuário" aria-label="Nome de usuário" name="email-username">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Servidor do e-mail" aria-label="Servidor do e-mail" name="email-server">
+      </div>
+      <div class="form-check-inline">
+        <label for="destino1" class="form-check-label"><input type="checkbox" name="destino" id="destino1" value="cidade" class="form-check-input">Cidade</label>
+        <label for="destino2"><input type="checkbox" name="destino" id="destino2" value="campo" class="form-check-input">Campo</label>
+        <label for="destino3"><input type="checkbox" name="destino" id="destino3" value="montanha" class="form-check-input">Montanha</label>
+        <label for="destino4"><input type="checkbox" name="destino" id="destino4" value="praia" class="form-check-input">Praia</label>
+      </div>
+      <div>
+        <label for="resposta">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+        <textarea name="resposta" id="resposta" cols="40" rows="10" maxlength="500" class="form-control"></textarea><label for="resposta"></label>
+      </div>
+      <div>
+        <label for="estacao">Qual sua estação favorita?
+        <select name="estacao" id="estacao" class="form-select">
+          <optgroup label="Boas">
+          <option value="primavera">Primavera</option>
+          <option value="outono">Outono</option></optgroup>
+          <optgroup label="Ruins">
+            <option value="inverno">Inverno</option>
+            <option value="verao">Verão</option></optgroup>
+        </label>
+        </select>
+      </div>
+      <p>
+        <label for="data">Qual seria a melhor data para realizar a viagem?<br><input type="date" id="data"></label>
+      </p>
+      <div class="form-check form-switch">
+        <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe" class="form-check-input">Receber notícias sobre oportunidades oferecidas pela Trybe</label> <br>
+        <label for="accept"><input type="checkbox" id="accept" name="accept" class="form-check-input">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros</label>
+      </div>
+      <br>
+      <button id="send" type="submit" class="btn btn-primary">Enviar</button>
+      <button id="clearBtn" type="reset" class="btn btn-primary">Reiniciar</button>
+    </form>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>

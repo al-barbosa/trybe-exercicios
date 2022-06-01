@@ -5,15 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="">
 </head>
 <body>
   <header>
     <form action="">
       <p>
-        <label for="nome"> Insira seu nome: <input type="text" name="nome" placeholder="Nome" id="nome" minlength="10" maxlength="40" required size="30"></label>
+        <label for="nome"> Insira seu nome: <input type="text" name="nome" placeholder="Nome" id="nome" minlength="10" maxlength="40" size="30"></label>
       </p>
       <p>
-        <label for="email">Insira seu e-mail: <input type="email" name="email" id="email" placeholder="E-mail" required minlength="10" maxlength="50" size="30"></label>
+        <label for="email">Insira seu e-mail: <input type="email" name="email" id="email" placeholder="E-mail" minlength="10" maxlength="50" size="30"></label>
       </p>
       <p>
         <label for="destino1"><input type="checkbox" name="destino" id="destino1" value="cidade" class="destino">Cidade</label>
@@ -41,8 +42,8 @@
         <label for="data">Qual seria a melhor data para realizar a viagem?<br><input type="date" id="data"></label>
       </p>
       <div>
-        <label for="subscribe"><input type="checkbox" id="subscribe">Receber notícias sobre oportunidades oferecidas pela Trybe</label> <br>
-        <label for="accept"><input type="checkbox" id="accept">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros</label>
+        <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe">Receber notícias sobre oportunidades oferecidas pela Trybe</label> <br>
+        <label for="accept"><input type="checkbox" id="accept" name="accept" value="yes">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros</label>
       </div>
       <br>
       <button id="send" type="submit">Enviar</button>
