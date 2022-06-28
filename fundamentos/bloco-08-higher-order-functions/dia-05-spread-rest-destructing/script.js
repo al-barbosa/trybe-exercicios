@@ -118,4 +118,47 @@ const people = [
   },
 ];
 
-// escreva filterPeople abaixo
+
+const yearSeasons = {
+  spring: ['March', 'April', 'May'],
+  summer: ['June', 'July', 'August'],
+  autumn: ['September', 'October', 'November'],
+  winter: ['December', 'January', 'February'],
+};
+
+const {spring, summer, autumn, winter} = yearSeasons
+//console.log([...spring, ...summer, ...autumn, ...winter])
+
+const greet = (nome = 'Usuário', saud = 'Oi') => `${saud}, ${nome}` 
+
+// console.log(greet('John')) // 'Hi John'
+// console.log(greet('John', 'Good morning')) // 'Good morning John'
+// console.log(greet('Isabela', 'Oi')) // 'Oi Isabela'
+
+const ships = [
+  {
+    name: 'Titanic',
+    length: 269.1,
+    measurementUnit: 'meters',
+  },
+  {
+    name: 'Queen Mary 2',
+    length: 1132,
+    measurementUnit: 'feet',
+  },
+  {
+    name: 'Yamato',
+    length: 256,
+    measurementUnit: 'meters',
+  },
+];
+
+const shipLength = (ships) => {
+  const { name, length: size, measurementUnit } = ships
+  return `${name} is ${size} ${measurementUnit} long`
+}
+
+// console.log(shipLength(ships[0])); // 'Titanic is 269.1 meters long'
+// console.log(shipLength(ships[1])); // 'Queen Mary 2 is 1132 feet long'
+// console.log(shipLength(ships[2])); // 'Yamato is 256 meters long'
+
