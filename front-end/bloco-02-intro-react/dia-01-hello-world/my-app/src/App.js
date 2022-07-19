@@ -13,18 +13,20 @@ import Footer from './footer.jsx'
 
 // const Arr = ['DataScience', 'Estatística', 'SQL']
 
-class App extends React.Component {
+// class App extends React.Component {
   
-}
-
-// function App() {
-//   return (
-//     <div>
-//       <Header />
-//       <Content />
-//       <Footer />
-//     </div>
-//   );
 // }
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <Content />
+        <Footer />
+      </div>
+    );
+  }
+}
 
 export default App;
